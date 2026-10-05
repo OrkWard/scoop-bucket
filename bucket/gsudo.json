@@ -6,7 +6,6 @@
     "url": "https://github.com/gerardog/gsudo/releases/download/v2.6.1/gsudo.portable.zip",
     "hash": "21130bf178d7b9891207f00bff56f05b6b363ce9cec7b2d084e45fb12ee51f44",
     "extract_dir": "x64",
-    "env_add_path": ".",
     "bin": [
         [
             "gsudo.exe",
