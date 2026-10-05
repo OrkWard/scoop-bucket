@@ -9,7 +9,11 @@
         "# rustup is a multi-call binary: the file name selects the proxy.",
         "'cargo', 'cargo-clippy', 'cargo-fmt', 'cargo-miri', 'clippy-driver', 'rls', 'rust-analyzer', 'rust-gdb', 'rust-gdbgui', 'rust-lldb', 'rustc', 'rustdoc', 'rustfmt' | ForEach-Object {",
         "    New-Item -ItemType HardLink -Path \"$dir\\$_.exe\" -Target \"$dir\\rustup.exe\" | Out-Null",
-        "}"
+        "}",
+        "# hok owns the binary: stop rustup replacing itself. Only touch an existing RUSTUP_HOME,",
+        "# so a run without RUSTUP_HOME set (e.g. from the GUI) doesn't create ~/.rustup.",
+        "$rustupHome = if ($env:RUSTUP_HOME) { $env:RUSTUP_HOME } else { Join-Path $env:USERPROFILE '.rustup' }",
+        "if (Test-Path -LiteralPath $rustupHome) { & \"$dir\\rustup.exe\" set auto-self-update disable }"
     ],
     "bin": [
         "rustup.exe",
@@ -27,11 +31,7 @@
         "rustdoc.exe",
         "rustfmt.exe"
     ],
-    "notes": [
-        "hok manages the rustup binary. Disable its self-update once:",
-        "  rustup set auto-self-update disable",
-        "Install a toolchain with: rustup default stable"
-    ],
+    "notes": "Install a toolchain with: rustup default stable",
     "checkver": {
         "url": "https://sh.rustup.rs",
         "regex": "rustup-init ([\\d.]+) \\("
