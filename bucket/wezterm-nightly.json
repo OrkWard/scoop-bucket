@@ -1,13 +1,13 @@
 {
-    "version": "20260919-032435_20260917-114457-b09b56c2",
-    "description": "GPU-accelerated terminal emulator (nightly)",
+    "version": "20261005-065541_20261005-054844-37254829",
+    "description": "GPU-accelerated terminal emulator (nightly), local build of wezterm main @ 37254829 with OSC 133 over mux and left/right ALT/CTRL key bindings",
     "homepage": "https://wezterm.org/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/wezterm/wezterm/releases/download/nightly/WezTerm-windows-nightly.zip",
-            "hash": "d7f57a6f0f9047a101505f19fb87e8be3378d90b19fc2e68e64870ac596e651d",
-            "extract_dir": "WezTerm-windows-20260917-114457-b09b56c2"
+            "url": "https://video3.orkward.dev/scoop-bucket/wezterm-nightly/20261005-065541_20261005-054844-37254829/WezTerm-windows-20261005-054844-37254829.zip",
+            "hash": "c88a45b681be2972f8c9c5a7ff129a2bcc28011fccde8ce682d00a0cfc7fa180",
+            "extract_dir": "WezTerm-windows-20261005-054844-37254829"
         }
     },
     "bin": [
