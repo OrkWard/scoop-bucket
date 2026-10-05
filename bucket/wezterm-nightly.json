@@ -1,12 +1,12 @@
 {
-    "version": "20261005-065541_20261005-054844-37254829",
-    "description": "GPU-accelerated terminal emulator (nightly), local build of wezterm main @ 37254829 with OSC 133 over mux and left/right ALT/CTRL key bindings",
+    "version": "20261005-074653_20261005-054844-37254829",
+    "description": "GPU-accelerated terminal emulator (nightly), local build of wezterm main @ 37254829 with OSC 133 over mux, left/right ALT/CTRL key bindings and `wezterm cli kill-server`",
     "homepage": "https://wezterm.org/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://video3.orkward.dev/scoop-bucket/wezterm-nightly/20261005-065541_20261005-054844-37254829/WezTerm-windows-20261005-054844-37254829.zip",
-            "hash": "c88a45b681be2972f8c9c5a7ff129a2bcc28011fccde8ce682d00a0cfc7fa180",
+            "url": "https://video3.orkward.dev/scoop-bucket/wezterm-nightly/20261005-074653_20261005-054844-37254829/WezTerm-windows-20261005-054844-37254829.zip",
+            "hash": "0876309ec3436b3aaff3e714344d14d7943158d65c8dcb4d724c50292edd8696",
             "extract_dir": "WezTerm-windows-20261005-054844-37254829"
         }
     },
