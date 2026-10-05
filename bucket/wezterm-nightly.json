@@ -19,5 +19,8 @@
             "wezterm-gui.exe",
             "WezTerm Nightly"
         ]
-    ]
+    ],
+    "shortcut_aumid": {
+        "WezTerm Nightly": "org.wezfurlong.wezterm"
+    }
 }
