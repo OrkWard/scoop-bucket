@@ -1,0 +1,9 @@
+{
+  "version": "2.37.1-20261005-203637",
+  "description": "direnv with nushell .envrc.nu support, built from git.lan:direnv @ ffd5ca1",
+  "homepage": "https://github.com/direnv/direnv",
+  "license": "MIT",
+  "url": "https://video3.orkward.dev/scoop-bucket/direnv-nu/2.37.1-20261005-203637/direnv.exe",
+  "hash": "53244c8e6538214b14317f64102ffdfd5187aed5a679821a8351f1095ac2d7ea",
+  "bin": "direnv.exe"
+}
