@@ -1,0 +1,42 @@
+{
+    "version": "1.29.1",
+    "description": "The Rust toolchain installer. Ships rustup and its proxies (cargo, rustc, ...) directly, like Homebrew; toolchains stay in RUSTUP_HOME.",
+    "homepage": "https://rustup.rs",
+    "license": "MIT|Apache-2.0",
+    "url": "https://static.rust-lang.org/rustup/archive/1.29.1/x86_64-pc-windows-msvc/rustup-init.exe#/rustup.exe",
+    "hash": "6f4bef66261261fcb43131be8720bab817d403a09edec7455c371974b90bdb7e",
+    "pre_install": [
+        "# rustup is a multi-call binary: the file name selects the proxy.",
+        "'cargo', 'cargo-clippy', 'cargo-fmt', 'cargo-miri', 'clippy-driver', 'rls', 'rust-analyzer', 'rust-gdb', 'rust-gdbgui', 'rust-lldb', 'rustc', 'rustdoc', 'rustfmt' | ForEach-Object {",
+        "    New-Item -ItemType HardLink -Path \"$dir\\$_.exe\" -Target \"$dir\\rustup.exe\" | Out-Null",
+        "}"
+    ],
+    "bin": [
+        "rustup.exe",
+        "cargo.exe",
+        "cargo-clippy.exe",
+        "cargo-fmt.exe",
+        "cargo-miri.exe",
+        "clippy-driver.exe",
+        "rls.exe",
+        "rust-analyzer.exe",
+        "rust-gdb.exe",
+        "rust-gdbgui.exe",
+        "rust-lldb.exe",
+        "rustc.exe",
+        "rustdoc.exe",
+        "rustfmt.exe"
+    ],
+    "notes": [
+        "hok manages the rustup binary. Disable its self-update once:",
+        "  rustup set auto-self-update disable",
+        "Install a toolchain with: rustup default stable"
+    ],
+    "checkver": {
+        "url": "https://sh.rustup.rs",
+        "regex": "rustup-init ([\\d.]+) \\("
+    },
+    "autoupdate": {
+        "url": "https://static.rust-lang.org/rustup/archive/$version/x86_64-pc-windows-msvc/rustup-init.exe#/rustup.exe"
+    }
+}
