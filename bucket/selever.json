@@ -1,10 +1,10 @@
 {
-    "version": "1.2.1",
-    "description": "Install exact Node.js, Go, npm and Go package versions (selever, globver, fetchver), built from github.com/OrkWard/selever @ v1.2.1",
+    "version": "1.3.0",
+    "description": "Install exact Node.js, Go, npm package, Go package, MSVC and Windows SDK versions (selever, globver, fetchver), built from github.com/OrkWard/selever @ v1.3.0",
     "homepage": "https://github.com/OrkWard/selever",
     "license": "Unknown",
-    "url": "https://video3.orkward.dev/scoop-bucket/selever/1.2.1/selever-1.2.1.zip",
-    "hash": "e64618c89fe0186c20bf61cf9bd291c60956e53484277b0f637c6a5d1efff814",
+    "url": "https://video3.orkward.dev/scoop-bucket/selever/1.3.0/selever-1.3.0.zip",
+    "hash": "f5728517392fe7f4a077ccbd92756a98ab426653183cdb867958b05a12b505d2",
     "extract_dir": "selever",
     "bin": [
         "selever.exe",
