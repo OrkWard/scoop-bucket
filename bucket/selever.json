@@ -1,14 +1,9 @@
 {
-    "version": "1.4.1",
-    "description": "Install exact Node.js, Go, Zig, ZLS, npm package, Go package, MSVC and Windows SDK versions (selever, globver, fetchver), built from github.com/OrkWard/selever @ v1.4.1",
+    "version": "2.0.0",
+    "description": "Fast .tool-versions manager with native offline shims for Node.js, Go, Zig, ZLS, npm packages and Go packages",
     "homepage": "https://github.com/OrkWard/selever",
-    "license": "Unknown",
-    "url": "https://video3.orkward.dev/scoop-bucket/selever/1.4.1/selever-1.4.1.zip",
-    "hash": "8c7a9e1991594d0faa9ccfca74984386866096cc97025931d28e489f37c06cd2",
-    "extract_dir": "selever",
-    "bin": [
-        "selever.exe",
-        "globver.exe",
-        "fetchver.exe"
-    ]
+    "license": "MIT",
+    "url": "https://video3.orkward.dev/scoop-bucket/selever/2.0.0/selever.exe",
+    "hash": "a37e90779afd6ef261e1727c10697e6c150939820ed9766ccbff87fa1f4699e2",
+    "bin": "selever.exe"
 }
